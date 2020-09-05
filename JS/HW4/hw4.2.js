@@ -16,7 +16,7 @@ function filterArray(array, cb) {
     const element = array[i];
     const index = i;
 
-    if (cb.call(element, array[1], i, array)) {
+    if (cb.call(element, array[i], i, array)) {
       numbers.push(element);
     }
   }
